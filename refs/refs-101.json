@@ -1,0 +1,439 @@
+{
+  "901": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets",
+      "sheetId": "A550",
+      "snippet": null,
+      "title": "No callout on available sheets — see A550"
+    },
+    {
+      "driveId": "1tnaLKRKzoqaigwVWmbbmWCV6UwiXOYs9",
+      "kind": "submittal",
+      "title": "Refridgerator.pdf (Guestroom Appliance PD & Cutsheets)"
+    },
+    {
+      "driveId": "11UUrE446TshGMdj25qdwkKU_AoZ5JpJl",
+      "kind": "submittal",
+      "title": "Danby Refrigerator DFF101B1BSSDB.pdf (Food Service Kitchen Appliance PD & Cutsheet) - same model, Danby-branded duplicate"
+    }
+  ],
+  "902": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets; per ruling no submittal refs - both 18\" and 24\" dishwasher cutsheets remain FLAGGED, nobody has picked a model",
+      "sheetId": "A550",
+      "snippet": null,
+      "title": "No callout on available sheets — see A550"
+    }
+  ],
+  "903": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets",
+      "sheetId": "A555",
+      "snippet": null,
+      "title": "No callout on available sheets — see A555"
+    }
+  ],
+  "904": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets",
+      "sheetId": "A550",
+      "snippet": null,
+      "title": "No callout on available sheets — see A550"
+    }
+  ],
+  "905": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets",
+      "sheetId": "A550",
+      "snippet": null,
+      "title": "No callout on available sheets — see A550"
+    }
+  ],
+  "GR-100": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-100-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-101": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-101-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-103": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-103-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-200": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-200-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-201": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-201-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-203": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/GR-203-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-204": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-204-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-205": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-205-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-207": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-207-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-208": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "note": "ID-5.8 prints GR-202 at the outboard nightstand-sconce positions (snippet shows the GR-202 callout); the DB carries these fixtures as GR-208 per A555, and Austin's paper sheet also wrote GR-202. Same fixture, two printed tags - not normalised.",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-208-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-300": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-300-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-302": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "note": "Discrepancy: Austin's bathroom checklist page prints 'GR-302L'; the ID-5.10 plan callout prints 'GR-302'. The FF&E spec describes GR-302 as 'Vanity @ Guest Bath (Left & Right)' - L/R are handing variants of the same vanity; the connector bath takes the left-hand unit per the field sheet. Recorded as printed on the plan. Submittal check 8/9: 'Moen Bathroom Vanity Faucet.pdf' was REMOVED from this item — the file is a M-Dura single-handle LAVATORY FAUCET (9417F12/9419F12), i.e. plumbing trim, not the vanity casegood. Its Drive folder is named 'Bathroom Vanity & Kitchenette Sink & Facuet - PD & Cutsheets' and all 4 files in it are sinks/faucets (MEP scope) — the folder name is what mis-matched it. See refs/MEP-PARKED.md.",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/GR-302-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-308": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-308-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-318": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-318-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-321": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/GR-321-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-322": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-322-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1yWG61b5tTRk9a37npjB8gil0JH-0-k-J",
+      "kind": "submittal",
+      "title": "RK Hospitality FF&E Guest Room - Shop Drawings, Specs & Product Data.pdf"
+    }
+  ],
+  "GR-400": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-400-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-402": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-402-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1qSz_8IPYyxxsiIwHorKKVRHcUYfrbWFE",
+      "kind": "submittal",
+      "title": "RK Hospitality Guest Room FF&E Room Divider Spec Sheet.pdf (WingIts WRD structural rod & ceiling mounts)"
+    }
+  ],
+  "GR-402.1": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-402.1-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1qSz_8IPYyxxsiIwHorKKVRHcUYfrbWFE",
+      "kind": "submittal",
+      "title": "RK Hospitality Guest Room FF&E Room Divider Spec Sheet.pdf (WingIts WRD structural rod & ceiling mounts)"
+    }
+  ],
+  "GR-403": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-403-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-500": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-500-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    },
+    {
+      "driveId": "1nat4040zyhiVEI1ZIlB4f-5iUrzGj95D",
+      "kind": "submittal",
+      "title": "Kalisher - Art Imagrey Submittal.pdf (Hilton Submittal #3, Dynamic scheme)"
+    }
+  ],
+  "GR-501": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/GR-501-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-502": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-502-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-600": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-600-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-600.1": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-600.1-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "GR-602": [
+    {
+      "driveId": "1TwllIXtTFD3Q-mGoV6jiTC4KK75iUS0U",
+      "kind": "plan",
+      "sheetId": "ID-5.8",
+      "snippet": "refs/GR-602-ID-5.8.png",
+      "title": "Enlarged Guestroom Plans & Elevations - QQ Std., QQ Ext., & QQ Std. Conn. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-03": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-03-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-08": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-08-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-12": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-12-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-16": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-16-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-18": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-18-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-21": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-21-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "HD-22": [
+    {
+      "driveId": "1x5SK_dlzsnm7I4vaE3FTRHNUN1a0K62Z",
+      "kind": "plan",
+      "sheetId": "ID-5.10",
+      "snippet": "refs/HD-22-ID-5.10.png",
+      "title": "Enlarged Bathroom - King Std., Std. Conn., QQ Std., Std Conn., QQ Wide & QQ Ext. (RK Hospitality FF&E Locations ID set)"
+    }
+  ],
+  "kn 11": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets",
+      "sheetId": "A550",
+      "snippet": null,
+      "title": "No callout on available sheets — see A550"
+    },
+    {
+      "driveId": "1rso_P1-kO2fpSXrAmYb6-y_Udt7TDNpw",
+      "kind": "submittal",
+      "title": "Over the Range Microwave.pdf (Guestroom Appliance PD & Cutsheets)"
+    },
+    {
+      "driveId": "1KrnAUpZLbxVzQy7abn9YlsszQd-7mqSE",
+      "kind": "submittal",
+      "title": "Danby Microwave Over-The-Range DOM16A2SSDB.pdf (Food Service Kitchen Appliance PD & Cutsheet) - same OTR model, Danby-branded duplicate"
+    }
+  ],
+  "u_ce20ab6281": [
+    {
+      "kind": "plan",
+      "note": "callout not found on available sheets; src is the E400 Panel A/B 'Disposer' circuit + E103 480 VA load - no ID/arch sheet draws it. Template item id u_ce20ab6281 (untagged garbage disposer). Per ruling no submittal refs - existence in Room 101 is unresolved, resolve before ordering",
+      "sheetId": "E400",
+      "snippet": null,
+      "title": "No callout on available sheets — see E400"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "note": "Classified index of bundled field photographs. Project field photos; not approval evidence.",
+  "folders": {
+    "floor1-demo": {
+      "summary": "54 photos: job site, exterior, pool/patio, portico and mostly-finished first-floor interiors. Per-entry 'captured' is EXIF DateTimeOriginal (camera local time); the set spans 2026-08-04 through 2026-09-14, and captured: null marks the 4 files with no EXIF date.",
+      "registryNote": "22 of these photos are attached as kind:'photo' references on documents AS100, AS102, AS104, AS105, A100 and A200 in platform/documents/registry.json. The in-app document library renders item-level references only, so those sheet-level references are index data; the browsing surface for them is review.html#photos.",
+      "files": {
+        "00D3F388-00A7-4DEB-8918-7DB58234306D.jpeg": {
+          "scene": "corridor",
+          "captured": "2026-08-21 15:41:18",
+          "description": "Corridor exit: double grey wood-look doors with panic hardware, illuminated exit sign, mosaic-pattern wallcovering, dark carpet tile; finished, pre-cleaning."
+        },
+        "128594FA-A44F-4D4A-8135-DEC1C70D836B.jpeg": {
+          "scene": "bath",
+          "captured": "2026-09-04 16:30:59",
+          "description": "Tub/shower surround with three chrome bars on white panel walls, gold-line wallcovering at right, hardware packaging still on deck; near-finished."
+        },
+        "1406A2D8-275D-4605-A25B-EC74683EEFE4.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-11 11:12:05",
+          "description": "Entry canopy underside: wood-slat soffit, dark steel beams, automatic sliding doors, brick piers, low-voltage pigtails not yet terminated; finishing."
+        },
+        "208DC214-89BC-4323-A329-FC00FDC1A17F.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-11 07:32:13",
+          "description": "Landscape bed with red FIRE LANE curb, young staked tree and agaves, skid steer, dumpster and FF&E cartons in lot; sitework in progress."
+        },
+        "20DC2801-46C3-4ADF-83BA-1D24A942C6F8.jpeg": {
+          "scene": "kitchenette",
+          "captured": "2026-08-21 15:40:25",
+          "description": "Kitchenette: wood-grain casework with black pulls, white quartz top, undermount sink with gooseneck faucet, OTR microwave, Danby dishwasher, stainless fridge; finished."
+        },
+        "24EA729B-1B79-437C-B5E3-D6AE619F64A8.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-11 11:18:01",
+          "description": "Freestanding steel trellis screen with vertical wood slats at entry-side walk, parking beyond; installed. Exact zone (portico vs patio) not confirmed from photo."
+        },
+        "275FBE9F-03EB-42E6-A0F4-62CB1BA4AB36.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-11 07:28:14",
+          "description": "Rear drive: red fire-lane curb, staked trees along tan CMU retaining wall, chain-link above, sweeper and flatbed truck; landscaping in progress."
+        },
+        "332EADC6-83DA-499F-9E29-0625164CFDF6.jpeg": {
+          "scene": "guest-room",
+          "captured": "2026-08-11 14:53:11",
+          "description": "Seating area dressed: grey sleeper sofa, blue/white geometric cube ottoman, herringbone-sketch wallcovering, framed vintage-car artwork, orb lamp, mirror, patterned carpet; mostly finished."
+        },
+        "3D8B3CCD-9546-42ED-B6A8-AB74A00CA696.jpeg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-21 12:24:32",
+          "description": "Street view of four-story building: two-tone blue lap panels, parapet HOME2 sign, solar carport in foreground, graded slope with rip-rap, mini excavator; sitework in progress."
+        },
+        "4210D18F-BC4F-48E5-9B7B-B42C910BD002.jpeg": {
+          "scene": "guest-room",
+          "captured": "2026-08-25 16:01:57",
+          "description": "Queen/queen studio: two grey upholstered headboards, mattresses in plastic, blue accent window wall, patterned valance, wardrobe and casework installed, packing debris; FF&E install."
+        },
+        "4AA81987-6EC5-44B4-A296-199C54557CFB.jpeg": {
+          "scene": "pool-patio",
+          "captured": "2026-09-14 17:42:42",
+          "description": "Pool filled: black metal pool fence and gate (tape on latch), chrome handrail, concrete deck, brick equipment building, solar carport beyond; near-finished."
+        },
+        "4B43DC98-A31F-49F6-9550-D9B52B981BE0.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-11 11:11:52",
+          "description": "Porte-cochere soffit: wood slats with black recessed downlight trims (some pigtails visible), dark steel frame, plywood staged below; finishing."
+        },
+        "4CD4E31A-1585-4BF0-B738-26E9C31AC39B.jpeg": {
+          "scene": "detail",
+          "captured": "2026-08-15 09:02:22",
+          "description": "Stainless audio-visual door alert push plate at accessible room entry on corridor mosaic wallcovering; installed."
+        },
+        "50D04A65-9E29-4B68-8577-841F0091A224.jpeg": {
+          "scene": "corridor",
+          "captured": "2026-09-08 16:29:31",
+          "description": "Double-loaded corridor: mixed grey/gold plank carpet tile, mosaic wallcovering, grey door frames, cylinder sconce at each entry, dome camera; punch/cleaning stage."
+        },
+        "526BEB98-6EB5-460B-A2E8-371AF360BA8A.jpeg": {
+          "scene": "detail",
+          "captured": null,
+          "description": "Guest room entry jamb: grey painted frame, gasketing and wall-side latch hardware, view into room with step ladder; construction ongoing."
+        },
+        "5595CAF7-9B9F-4E8D-AD92-728EEA7C95ED.jpeg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-21 12:22:44",
+          "description": "Building corner with HOME2 signage, blue lap siding over grey brick base, black patio pergola frame and brick screen walls, crews planting desert beds; landscape in progress."
+        },
+        "58CE1216-93F2-4477-BEF2-C9C15A47364B.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-09-11 11:06:14",
+          "description": "Fresh sod strip with staked tree, red FIRE LANE NO PARKING curb, tan CMU retaining wall with chain-link; irrigation and sod just installed."
+        },
+        "5967C7FD-4861-48E4-BE52-4E1489E51F2F.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-09-11 11:06:16",
+          "description": "Irrigation sprinklers running on new sod at parking corner, red fire-lane curbs, retaining walls; landscape establishment."
+        },
+        "5BCB83DC-FC95-4161-BBD4-6654132B2472.jpeg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-21 12:23:12",
+          "description": "Side elevation: HOME2 SUITES BY HILTON channel letters, light blue lap + navy panel + white bands, grey brick base, storefront glazing, new shrub bed, exit door propped; near-complete."
+        },
+        "614EF244-DC10-4989-8F07-227EF32CC8AA.jpeg": {
+          "scene": "lobby-common",
+          "captured": "2026-08-21 11:19:28",
+          "description": "Fitness room FF&E: Peloton spin bike mid-assembly, treadmills in wrap, dumbbell rack, adjustable bench, speckled grey fitness flooring; install in progress."
+        },
+        "65C81032-DAA9-453F-A67E-BB394E3A0CB1.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-21 12:23:50",
+          "description": "HOME2 monument sign at street below tan CMU retaining wall, solar carport panels, dirt stockpile, building beyond; sitework in progress."
+        },
+        "6A62235E-065A-451C-8210-E6C43427985D.jpeg": {
+          "scene": "bath",
+          "captured": "2026-08-21 15:40:12",
+          "description": "Shower: sliding frameless glass with chrome rail, white large-format panel surround, corner seat, vertical grab bar and towel bars, gold-line wallcovering; finished."
+        },
+        "762C6EE5-4771-4C9F-90E7-F255203F12CA.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-21 12:23:35",
+          "description": "Rock-mulch landscape island with agaves, FIRE LANE curb, solar carport, portable toilets, mini excavator, skid steer and boom lift, staked tree; sitework in progress."
+        },
+        "7723B04D-5FFD-407D-BD72-2E70F12938D1.jpeg": {
+          "scene": "detail",
+          "captured": "2026-08-04 18:22:19",
+          "description": "Carrier VRF condensing unit on side-yard pad, sample-well and utility covers in bed, palms and grasses planted, temporary fence; exterior MEP equipment set."
+        },
+        "7B33C692-8553-43B1-8E79-A56FDBB10B2C.jpeg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-21 12:23:26",
+          "description": "Front elevation: HOME2 SUITES sign, porte-cochere steel frame with wood deck (near-bay soffit slats not yet installed), entry scaffolding, boom lift; exterior finishing."
+        },
+        "7DBD66BC-E134-4EA8-AC61-DDDF62173CBC.jpeg": {
+          "scene": "bath",
+          "captured": "2026-09-10 11:27:45",
+          "description": "Toilet wall: gold-line geometric wallcovering, chrome towel bar and paper holder, wood shelf, quartz vanity edge, shower glass at left; near-finished."
+        },
+        "7F941E62-72F3-465C-941D-562BC0347BBA.jpeg": {
+          "scene": "bath",
+          "captured": null,
+          "description": "Rephotographed screen image of the bath scheme with towels staged (computer taskbar visible); reference only, not a direct field exposure."
+        },
+        "822549C2-797B-48B9-8F14-60BADDE4417F.jpeg": {
+          "scene": "pool-patio",
+          "captured": "2026-08-31 17:58:51",
+          "description": "Pool filled with chrome entry ladder and 3FT depth markings, grey brick planter wall with cast cap, tan CMU retaining wall, equipment building, black gate; near-finished."
+        },
+        "867516E7-7280-41E7-815A-89F5350892A1.jpeg": {
+          "scene": "guest-room",
+          "captured": "2026-08-21 15:39:33",
+          "description": "King studio: grey upholstered headboard, mattress wrapped, wrapped sconces, herringbone wallcovering, framed car art in plastic, sofa and cube ottoman, blue accent wall, PTAC below window; FF&E installed, not dressed."
+        },
+        "8BDB10BB-3421-42E8-9536-46A96B14E89F.jpeg": {
+          "scene": "bath",
+          "captured": "2026-08-21 15:40:00",
+          "description": "Bath entry: white door, grey plank tile floor, toilet, sliding glass shower, gold-line wallcovering; finished."
+        },
+        "911E58BC-1C6A-470B-89EF-24A02A718F6C.jpeg": {
+          "scene": "guest-room",
+          "captured": "2026-09-10 11:27:01",
+          "description": "Installer mounting cylindrical headboard sconces in queen/queen room, mattresses wrapped, blue accent wall, patterned valance; FF&E install in progress."
+        },
+        "97DEEE61-54ED-4A1A-8FF3-9B854210BAE8.jpeg": {
+          "scene": "kitchenette",
+          "captured": "2026-08-21 15:39:43",
+          "description": "Kitchenette and work wall: floating blue shelves, desk with task lamp and mesh chair, upper cabinet with stainless microwave, quartz counter, Danby dishwasher, fridge, 55-inch TV cartons; install in progress."
+        },
+        "9A7F80D9-573A-4E03-8829-3ABD36AAC019.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-09-11 11:06:46",
+          "description": "Corner landscape bed: new sod, staked trees, shrubs, sprinklers on, red fire-lane curb, CMU retaining wall, pad-mounted transformer; landscape establishment."
+        },
+        "9B9BBCB0-9F90-45A4-81BC-41FFF6B445E4.jpeg": {
+          "scene": "guest-room",
+          "captured": null,
+          "description": "Room mid-install: casework run (dresser, desk, wardrobe with hooks, bench), task lamp, mattresses wrapped, packing debris on carpet, prepped door leaf in foreground; in progress."
+        },
+        "A528480A-99BC-48B1-AC5D-325A9B3D1E10.jpeg": {
+          "scene": "pool-patio",
+          "captured": "2026-08-31 17:58:10",
+          "description": "Pool deck along brick seat wall, palms planted, black fence and gates, equipment building, blue siding above; deck complete, planting in progress."
+        },
+        "AFEB160B-2D4A-485F-890C-6771FDCD3CF1.jpeg": {
+          "scene": "pool-patio",
+          "captured": "2026-08-21 12:22:56",
+          "description": "Black steel pergola frame without slats at pool gate walk, pool beyond fence, brick screen walls, mini-split condenser, unplanted beds; in progress (trellis slat material unresolved in source record)."
+        },
+        "B012053A-014A-4FC7-92C7-84B626868A79.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-21 12:24:48",
+          "description": "Street frontage: parapet HOME2 sign centered, solar carports across lot, graded slope with rip-rap, fire hydrant, monument sign at right; sitework."
+        },
+        "B3458F25-00AC-44B9-B14E-2AF3478FFF09.jpeg": {
+          "scene": "pool-patio",
+          "captured": "2026-08-21 12:22:59",
+          "description": "Pergola frame and brown-primed pool fence with drills and grinder on deck, pool filled, stair-tower scaffolding, bare beds; in progress."
+        },
+        "B39FDA6B-B2E5-4390-927A-E8DB76D73996.jpeg": {
+          "scene": "bath",
+          "captured": "2026-08-21 15:39:56",
+          "description": "Vanity: yellow-framed mirror with LED bar light, white quartz top, undermount sink, chrome faucet, dark wood open vanity, L-shaped wood shelf, gold-line wallcovering; finished."
+        },
+        "B4B2398B-907E-48AC-90C7-7F3F757D0F3A.jpeg": {
+          "scene": "pool-patio",
+          "captured": "2026-08-31 15:36:22",
+          "description": "Patio enclosure: grey brick seat wall with cast stone cap, dark bronze fence and gates, bi-level drinking fountain, blue siding; hardscape done, beds unplanted."
+        },
+        "B8D52E88-153F-4DFB-9742-617808A3C407.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-21 12:24:46",
+          "description": "Street frontage with HOME2 parapet sign, solar carports, graded dirt slope, fire hydrant; sitework."
+        },
+        "BA920A8A-5891-42DE-AFDB-90B5E2422EBE.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-11 11:11:42",
+          "description": "Completed wood-slat porte-cochere soffit with recessed downlights, HOME2 high sign, sliding entry doors, scaffold and ladders at entry; finishing."
+        },
+        "CDAA59C9-3C9B-416D-8BE3-4D0A348B0E3E.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-21 12:23:58",
+          "description": "Frontage drainage: rip-rap slope, concrete inlet headwall with wood barricade, solar carport, highway with university guide sign, transformer pole; civil work."
+        },
+        "DCDDD832-BF95-4842-B501-779ED8BC0D82.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-08-11 07:28:03",
+          "description": "Service yard at dusk: dark bronze louvered trash-enclosure gates, two-tone blue utility building with open CMU bay, red fire-lane curb; near-complete."
+        },
+        "E875BEA1-59AD-4A00-8224-870B96011778.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-08 18:06:35",
+          "description": "Canopy soffit at entry: warm wood slats, HOME2 sign, sliding doors, brick piers, light pigtails hanging, scaffold boards staged; finishing."
+        },
+        "EC8226A3-43E6-40D5-84E4-8B8858F25C5D.jpeg": {
+          "scene": "exterior-site",
+          "captured": "2026-09-11 11:06:12",
+          "description": "Sodded strip behind building at CMU retaining wall, red FIRE LANE curb, staked tree, mini-split condenser, irrigation flags; landscape establishment."
+        },
+        "F39314E0-53C9-45EB-A92B-83432E4F776C.jpeg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-31 17:57:59",
+          "description": "Pool-side elevation: light blue lap siding with white bands, grey brick screen wall with palms planted, dark gate, pole light on concrete base; landscaping in progress."
+        },
+        "F808D45C-9546-4A36-B804-F685006B4031.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-14 21:13:31",
+          "description": "Dusk view under portico: wood-slat soffit downlights on, steel beams, brick piers, entry with exit sign, posted alcohol-license notice, HOME2 plaque; near-complete."
+        },
+        "FB495BD5-E5A5-4302-9CCB-5D05ED337496.jpeg": {
+          "scene": "portico-entry",
+          "captured": "2026-09-11 11:11:31",
+          "description": "Front drive view: two-tier porte-cochere with wood soffit, HOME2 sign, work truck, ladders and crew at entry glazing; finishing."
+        },
+        "FEACCED9-CE2C-4F0B-9D31-850BC7C23AB7.jpeg": {
+          "scene": "exterior-site",
+          "captured": null,
+          "description": "Overcast frontage: tan CMU retaining wall, graded topsoil, HOME2 monument sign, solar carports, skid steer and flatbed, rock stockpile, red fire-lane curb; landscape in progress."
+        },
+        "IMG_2026_08_07_15_49_51_042.jpg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-07 15:49:51",
+          "description": "First-floor common-area windows in blue lap siding with continuous louver vents at sill, fresh desert shrub bed along walk, palm and condenser beyond; August 7 landscape install."
+        },
+        "IMG_2026_08_07_15_50_03_768.jpg": {
+          "scene": "detail",
+          "captured": "2026-08-07 15:50:04",
+          "description": "Grade-mounted air handling units (tagged 3358) on pad behind building, yellow access ladder with DANGER scaffold sign, blue scaffold frame, cobble bed; MEP install, August 7."
+        },
+        "IMG_2026_08_07_15_50_19_769.jpg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-07 15:50:20",
+          "description": "Side-yard bed by VRF condensers with palm and utility covers, PTZ camera on siding, empty pool shell behind temporary fence at left; August 7, earlier stage."
+        },
+        "IMG_2026_08_07_15_50_49_300.jpg": {
+          "scene": "exterior-building",
+          "captured": "2026-08-07 15:50:49",
+          "description": "Brick utility and stair mass with site wall, palms planted along parking edge, downspout, CMU stacks and storage containers beyond; August 7 landscape install."
+        }
+      }
+    },
+    "demo-room": {
+      "summary": "Room 110 demo set: 26 photos captured 2026-08-12. The 7 registry-linked shots are the copies at review-assets/photos/20260812_*.jpg; this folder holds the full set."
+    }
+  }
+}

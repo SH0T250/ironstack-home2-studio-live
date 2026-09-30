@@ -1,0 +1,21 @@
+/* Shared dashboard shell for the local Ironstack review studio.
+   Dark BIM-exhibit face on all widths (canonical tokens live in app.css :root,
+   reference: root room-3d.html). This file keeps only desktop layout tuning
+   plus the approved co-branding blocks. */
+@media(min-width:900px){.main{padding:26px;max-width:none}.pagehead{margin-bottom:22px}.floor-screen .floor-kicker{font-size:9px}.floor-screen .h1{font-size:26px}}
+
+/* Approved blueprint wordmark and project co-branding, September 2026. */
+.side .brand{padding:18px 12px 14px}
+.side .brand img{mix-blend-mode:normal;max-width:none;border:1px solid #12364f;border-radius:6px;background:#031522}
+.project-brandbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:-8px 0 24px;padding:0 0 18px;border-bottom:1px solid var(--line)}
+.project-brandbar-label{font:600 10px/1.5 var(--mono);letter-spacing:.16em;color:var(--cyan);text-transform:uppercase}
+.project-brandbar-label span{display:block;margin-top:4px;font:600 9.5px/1.6 var(--mono);letter-spacing:.12em;color:var(--mut);text-transform:uppercase}
+.project-brandbar-logos{display:flex;align-items:center;justify-content:flex-end;gap:24px;flex-shrink:0}
+/* Light backing chip keeps the Hilton mark legible on the dark ground
+   (the SVG itself is untouched). */
+.hotel-brand-logo{display:block;width:132px;height:72px;object-fit:contain;padding:6px 10px;background:#f4f2ec;border:1px solid var(--line);border-radius:6px}
+@media(max-width:1100px){.project-brandbar-label{display:none}.project-brandbar{justify-content:flex-end}}
+@media(max-width:600px){.project-brandbar{margin:0 0 18px;padding-bottom:14px}.project-brandbar-logos{width:100%;justify-content:flex-end;gap:14px}.hotel-brand-logo{width:108px;height:60px;padding:5px 8px}}
+/* <900px: the fixed connmob status pill sits top-right; drop the Hilton chip below it */
+@media(max-width:899px){.project-brandbar{margin-top:calc(26px + env(safe-area-inset-top))}}
+@media print{.project-brandbar{break-inside:avoid}.hotel-brand-logo{background:#FFFFFF;border-color:#CFD6DA;padding:0;width:116px;height:64px}}
