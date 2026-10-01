@@ -1034,6 +1034,27 @@ export function identityGate(ctx) {
   });
 }
 
+// Live mode, returning device: the app opens knowing who used it last. Say so
+// out loud - "That's me" carries on, "Switch user" hands the sheet to the next
+// person - instead of silently assuming (Austin, 2026-10-01).
+export function welcomeGate(ctx) {
+  const { store } = ctx;
+  const u = store.user;
+  if (!u) return identityGate(ctx);
+  const { close } = sheet(`
+    <div class="sh"><b style="font-size:15px">Welcome back</b></div>
+    <div style="display:flex;align-items:center;gap:12px;margin:4px 0 10px">
+      <span class="stamp checked" style="width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;flex:none;font-size:14px">${esc(u.initials || '?')}</span>
+      <span><b style="font-size:14.5px">${esc(u.name || u.initials)}</b><br/>
+        <span style="font-size:12.5px;color:var(--muted)">${esc(u.company || 'No company picked')}</span></span>
+    </div>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:12px">Boxes you check get stamped with these initials. Someone else holding this phone? Switch user first.</div>
+    <div class="srow"><button class="btn" data-switch>Switch user</button><button class="btn primary" data-ok>That's me</button></div>`);
+  const s = document.querySelector('.sheet');
+  s.querySelector('[data-ok]').addEventListener('click', () => close());
+  s.querySelector('[data-switch]').addEventListener('click', () => { close(); identityGate(ctx); });
+}
+
 // ---------- common areas (the spaces on every built floor) ----------
 
 function spaceRow(ctx, sp) {

@@ -18,4 +18,16 @@
 @media(max-width:600px){.project-brandbar{margin:0 0 18px;padding-bottom:14px}.project-brandbar-logos{width:100%;justify-content:flex-end;gap:14px}.hotel-brand-logo{width:108px;height:60px;padding:5px 8px}}
 /* <900px: the fixed connmob status pill sits top-right; drop the Hilton chip below it */
 @media(max-width:899px){.project-brandbar{margin-top:calc(26px + env(safe-area-inset-top))}}
+/* <900px the sidebar is gone, and with it the Ironstack mark and the identity
+   row. The brandbar then carries both: Ironstack logo left, tappable initials
+   avatar next to the Hilton chip. Desktop keeps them hidden - the sidebar
+   already shows both (Austin, 2026-10-01: phone must show the logo and who
+   is signed in). Placed after the 600px logos rule so width:auto wins. */
+.mob-ironstack,.mob-me{display:none}
+@media(max-width:899px){
+  .mob-ironstack{display:block;width:118px;height:auto;flex:none;border:1px solid #12364f;border-radius:6px;background:#031522}
+  .project-brandbar{justify-content:space-between;gap:10px}
+  .project-brandbar-logos{width:auto;gap:12px}
+  .mob-me{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;background:var(--cyan);color:#03181f;font:700 11px var(--mono);letter-spacing:.02em}
+}
 @media print{.project-brandbar{break-inside:avoid}.hotel-brand-logo{background:#FFFFFF;border-color:#CFD6DA;padding:0;width:116px;height:64px}}

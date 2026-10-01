@@ -5,7 +5,7 @@
 import { loadStore } from './core/store.js';
 import { Registry, startRouter } from './core/registry.js';
 import { ic, el, esc } from './core/ui.js';
-import { trackingModule, identityGate } from './modules/tracking/module.js';
+import { trackingModule, identityGate, welcomeGate } from './modules/tracking/module.js';
 import { bimModule } from './modules/bim/module.js';
 import { directoryModule } from './modules/directory/module.js';
 import { firebaseConfig } from './config.js';
@@ -98,8 +98,10 @@ function renderShell(hash, renderScreen) {
     </aside>
     <main class="main">
       <header class="project-brandbar" aria-label="Home2 Suites project and Ironstack studio">
+        <img class="mob-ironstack" src="${window.__H2SEP_LOGO || '../brand/ironstack-logo.png'}" alt="IRONSTACK.PRO — Build Better Systems."/>
         <div class="project-brandbar-label">HOME2 SUITES · EAGLE PASS<span>Field operations &amp; model studio</span></div>
         <div class="project-brandbar-logos">
+          <button class="mob-me" data-id-switch aria-label="Your initials and company. Tap to switch user.">${esc(u?.initials || '?')}</button>
           <img class="hotel-brand-logo" src="../brand/home2-suites-by-hilton.svg" alt="Home2 Suites by Hilton" width="116" height="64"/>
         </div>
       </header>
@@ -113,9 +115,13 @@ function renderShell(hash, renderScreen) {
   const mainEl = app.querySelector('.main');
   if (renderScreen) mainEl.append(renderScreen());
   else mainEl.append(el(`<div class="coming"><b>Not found</b><span>That screen does not exist. Use the menu.</span></div>`));
-  if (!store.user && !sessionStorage.getItem('h2sep-original-review:id-prompted')) {
+  // Once per app open: no identity yet gets the sign-in sheet; a remembered
+  // identity in live mode gets the welcome-back sheet (that's me / switch),
+  // so a shared phone never silently stamps the wrong person's initials.
+  if (!sessionStorage.getItem('h2sep-original-review:id-prompted')) {
     sessionStorage.setItem('h2sep-original-review:id-prompted', '1');
-    identityGate(ctx);
+    if (!store.user) identityGate(ctx);
+    else if (!LOCAL_REVIEW) welcomeGate(ctx);
   }
 }
 
