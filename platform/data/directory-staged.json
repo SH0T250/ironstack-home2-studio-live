@@ -2,7 +2,7 @@
  "meta": {
   "kind": "directory-staged",
   "note": "FICTIONAL demo directory: every person, phone number and email is invented; companies are invented except the GC. Assignments cover the real floor-1 scopes; activity entries mirror real checked lines, attributed to the fictional cast.",
-  "builtAt": "2026-10-01T04:04:58.200Z"
+  "builtAt": "2026-10-01T04:16:18.371Z"
  },
  "docs": {
   "_dir": {
@@ -27,12 +27,12 @@
      "updatedAt": "2026-09-09T13:30:00.000Z"
     },
     "c_gc01": {
-     "org": "Triun Construction & Engineering",
+     "org": "Ironstack Construction Group",
      "name": "Austin Jones",
      "title": "Project Manager",
      "scope": "",
      "phone": "(830) 555-0101",
-     "email": "ajones@triunce.com",
+     "email": "austin@ironstack.pro",
      "address": "",
      "note": "",
      "category": "Contractor (GC)",
@@ -42,12 +42,12 @@
      "updatedAt": "2026-09-09T13:30:00.000Z"
     },
     "c_gc02": {
-     "org": "Triun Construction & Engineering",
+     "org": "Ironstack Construction Group",
      "name": "Marcus Delgado",
      "title": "Superintendent",
      "scope": "",
      "phone": "(830) 555-0102",
-     "email": "mdelgado@triunce.com",
+     "email": "mdelgado@ironstack.pro",
      "address": "",
      "note": "",
      "category": "Contractor (GC)",
@@ -57,12 +57,12 @@
      "updatedAt": "2026-09-09T13:30:00.000Z"
     },
     "c_gc03": {
-     "org": "Triun Construction & Engineering",
+     "org": "Ironstack Construction Group",
      "name": "Carmen Castillo",
      "title": "Field Engineer",
      "scope": "",
      "phone": "(830) 555-0103",
-     "email": "ccastillo@triunce.com",
+     "email": "ccastillo@ironstack.pro",
      "address": "",
      "note": "",
      "category": "Contractor (GC)",
@@ -756,14 +756,14 @@
   {
    "text": "checked GR-402.1 Divider Drapery Hardware in 110",
    "by": "MD",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-08-12T19:34:13.958Z",
    "docId": "110"
   },
   {
    "text": "checked GR-403 Closet Drapery @ Guest Suite in 110",
    "by": "MD",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-08-12T19:34:15.244Z",
    "docId": "110"
   },
@@ -784,14 +784,14 @@
   {
    "text": "checked kn 11 Over-the-range microwave, wall-affixed in 115",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-02T17:22:52.444Z",
    "docId": "115"
   },
   {
    "text": "checked kn 11 Over-the-range microwave, wall-affixed in 116",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-02T17:24:30.767Z",
    "docId": "116"
   },
@@ -812,33 +812,33 @@
   {
    "text": "added contact Rio Grande Mechanical",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-09T13:31:00.000Z",
    "docId": "_dir"
   },
   {
    "text": "added contact Casa Grande Interiors",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-09T13:34:00.000Z",
    "docId": "_dir"
   },
   {
    "text": "assigned Plumbing in 16 rooms to Rio Grande Mechanical",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-10T14:05:00.000Z",
    "docId": "_asg"
   },
   {
    "text": "assigned Fire Alarm in 16 rooms to Eagle Pass Alarm & Comm",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-10T14:09:00.000Z",
    "docId": "_asg"
   },
   {
-   "text": "walked plumbing trim with Triun in 101-108 ahead of turnover",
+   "text": "walked plumbing trim with Ironstack in 101-108 ahead of turnover",
    "by": "RM",
    "byCo": "Rio Grande Mechanical",
    "at": "2026-09-15T15:20:00.000Z",
@@ -875,7 +875,7 @@
   {
    "text": "noted an issue on 303 Towel Bar in 112 - blocking not found, opened wall at 42 in.",
    "by": "MD",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-24T16:42:00.000Z",
    "docId": "112"
   },
@@ -889,14 +889,14 @@
   {
    "text": "resolved the issue on 303 Towel Bar in 112 - blocking added, accessory reset",
    "by": "CC",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-26T15:10:00.000Z",
    "docId": "112"
   },
   {
    "text": "assigned Appliance supply in 16 rooms to Alamo Appliance Supply",
    "by": "AJ",
-   "byCo": "Triun C&E",
+   "byCo": "Ironstack",
    "at": "2026-09-29T13:20:00.000Z",
    "docId": "_asg"
   },
