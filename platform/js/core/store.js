@@ -29,7 +29,9 @@ export class Store {
     for (const [id, doc] of Object.entries(seed.docs)) {
       this.docs[id] = structuredClone(doc);
     }
-    this.activity = [];
+    // Staged activity paints first (the saved field record), this browser's
+    // own actions append after it in the replay below.
+    this.activity = Array.isArray(seed?.activity) ? [...seed.activity] : [];
     this.listeners = new Set();
     this.queued = 0;               // pending writes (offline story; local backend syncs instantly)
     this.backend = null;           // set by attachBackend() when Firebase is configured
@@ -48,6 +50,14 @@ export class Store {
       company: String(company || '').trim().slice(0, 60),
     };
     try { localStorage.setItem(ID_KEY, JSON.stringify(this._reviewUser)); } catch { /* still allow this local review session */ }
+    this._emit();
+  }
+  // Forget the stored identity so the "Who is checking?" sheet gates the next
+  // action. Used when a live boot finds the local-review stand-in persisted
+  // from before the backend was switched on.
+  clearUser() {
+    this._reviewUser = null;
+    try { localStorage.removeItem(ID_KEY); } catch { /* nothing stored */ }
     this._emit();
   }
 
@@ -453,6 +463,19 @@ export async function loadStore() {
         if (res.ok) seed = await res.json();
       } catch { /* nothing to paint from */ }
     }
+  }
+  // The staged directory (fictional demo contacts, sub assignments over the
+  // real scopes, and a seeded activity feed) rides alongside the floor seeds.
+  // Firestore replaces the _dir/_asg docs the moment server copies exist.
+  if (seed && seed.docs) {
+    try {
+      const res = await fetch(new URL('../../data/directory-staged.json', import.meta.url));
+      if (res.ok) {
+        const dir = await res.json();
+        for (const [id, d] of Object.entries(dir.docs || {})) if (!seed.docs[id]) seed.docs[id] = d;
+        if (Array.isArray(dir.activity)) seed.activity = [...(seed.activity || []), ...dir.activity];
+      }
+    } catch { /* the app works without the demo directory */ }
   }
   return new Store(seed);
 }

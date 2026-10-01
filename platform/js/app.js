@@ -32,7 +32,11 @@ const store = await loadStore();
 // during local review still carries the stand-in in storage - forget it, so
 // the live boot onboards that person properly instead of skipping them past
 // the sheet.
-if (!LOCAL_REVIEW && store.user?.name === 'Preview Reviewer' && store.user?.initials === 'RV') store.clearUser();
+// Guarded call: right after a deploy a phone can briefly hold THIS file fresh
+// and core/store.js from cache, and an unconditional call to a brand-new
+// method would crash the boot to a black screen. Degrading to "keep the
+// stand-in until the cache turns over" is the acceptable failure.
+if (!LOCAL_REVIEW && store.user?.name === 'Preview Reviewer' && store.user?.initials === 'RV' && typeof store.clearUser === 'function') store.clearUser();
 if (!store.user && LOCAL_REVIEW) store.setUser('Preview Reviewer', 'RV', 'Local review');
 
 // Attach Firebase when configured. The bundled artifact preview cannot reach
