@@ -979,6 +979,9 @@ export function identityGate(ctx) {
     <div style="font-size:13px;color:var(--muted);margin-bottom:4px">Your initials go on every box you check, exactly like initialing the paper sheet. Your company rides along with them, so anyone reading the list knows which outfit signed the line.</div>
     <div class="field"><label>Your name</label><input data-name maxlength="40" placeholder="Full name" value="${esc(u?.name || '')}"/></div>
     <div class="field"><label>Initials</label><input data-init maxlength="3" placeholder="AB" value="${esc(u?.initials || '')}" style="width:110px;text-transform:uppercase;font-family:var(--mono);font-weight:700"/></div>
+    <div class="field" style="display:flex;align-items:center;gap:10px;margin-top:2px">
+      <span class="stamp checked" data-stamp-prev style="width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;flex:none">${esc(u?.initials || 'AB')}</span>
+      <span style="font-size:12.5px;color:var(--muted)">This is how your check mark will look</span></div>
     <div class="field"><label>Company you work for</label>
       <select data-co>
         <option value="">Pick your company</option>
@@ -992,6 +995,11 @@ export function identityGate(ctx) {
   const nameEl = s.querySelector('[data-name]'), initEl = s.querySelector('[data-init]');
   const coEl = s.querySelector('[data-co]'), otherEl = s.querySelector('[data-other]');
   const otherWrap = s.querySelector('[data-otherwrap]');
+  // Live preview of the check-mark stamp as the initials are typed.
+  const stampPrev = s.querySelector('[data-stamp-prev]');
+  const paintStamp = () => { stampPrev.textContent = (initEl.value.trim() || 'AB').toUpperCase().slice(0, 3); };
+  initEl.addEventListener('input', paintStamp);
+  paintStamp();
   const fillCompanies = () => {
     const now = companyOptions(store);
     if (now.length === orgs.length) return;
@@ -1143,7 +1151,7 @@ function renderActivity(ctx) {
   const { store } = ctx;
   const acts = [...store.activity].reverse();
   return el(`<div>
-    <div class="pagehead"><h1 class="h1">Activity</h1><span class="sub">every action in this browser, newest first</span></div>
+    <div class="pagehead"><h1 class="h1">Activity</h1><span class="sub">the field record, newest first · who checked what, where, and when</span></div>
     <section class="card">${acts.length ? acts.map(a => `
       <div class="note-row"><span class="nfl info">${esc(a.by)}</span><span class="nt">${esc(a.text)}${a.byCo ? ` <b class="co">${esc(shortCo(a.byCo))}</b>` : ''}</span><span class="nd">${fmtWhen(a.at)}</span></div>`).join('')
       : `<div class="coming">${ic('pulse')}<b>Nothing yet</b><span>Check a line in any room and it lands here with your initials and a timestamp.</span></div>`}</section>

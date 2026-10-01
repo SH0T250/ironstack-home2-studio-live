@@ -28,7 +28,11 @@ const MODEL_ROOMS = ['101', '103', '104', '105', '106', '107', '108', '109', '11
 const store = await loadStore();
 // Local review signs nothing, so a stand-in identity keeps the UI whole.
 // Live mode must NOT seed one: with no user, the "Who is checking?" sheet
-// gates the first visit, exactly like the crew app.
+// gates the first visit, exactly like the crew app. A device that visited
+// during local review still carries the stand-in in storage - forget it, so
+// the live boot onboards that person properly instead of skipping them past
+// the sheet.
+if (!LOCAL_REVIEW && store.user?.name === 'Preview Reviewer' && store.user?.initials === 'RV') store.clearUser();
 if (!store.user && LOCAL_REVIEW) store.setUser('Preview Reviewer', 'RV', 'Local review');
 
 // Attach Firebase when configured. The bundled artifact preview cannot reach

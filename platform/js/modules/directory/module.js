@@ -28,8 +28,12 @@ function skeleton(id, type, typeLabel) {
   };
 }
 async function ensure(store, docId) {
-  if (docId === DIR_DOC) return store.ensureDoc(DIR_DOC, skeleton(DIR_DOC, 'directory', 'Project Directory'));
-  return store.ensureDoc(ASG_DOC, skeleton(ASG_DOC, 'assignments', 'Sub Assignments'));
+  // Seed the server with the CURRENT local doc, not a bare skeleton: the
+  // staged demo directory paints locally before any server copy exists, and
+  // creating an empty doc here would let the first snapshot wipe it for
+  // everyone. Promoting the local doc keeps what every visitor already sees.
+  if (docId === DIR_DOC) return store.ensureDoc(DIR_DOC, store.getDoc(DIR_DOC) || skeleton(DIR_DOC, 'directory', 'Project Directory'));
+  return store.ensureDoc(ASG_DOC, store.getDoc(ASG_DOC) || skeleton(ASG_DOC, 'assignments', 'Sub Assignments'));
 }
 
 // ---------- reads ----------
