@@ -10,8 +10,13 @@ import { bimModule } from './modules/bim/module.js';
 import { directoryModule } from './modules/directory/module.js';
 import { firebaseConfig } from './config.js';
 
-// This copy is a local review of saved project records, never a live client.
-const LOCAL_REVIEW = true;
+// One knob decides the copy's nature: with no Firebase config this is a local
+// review of saved records (no sign-in, nothing saved); with a config it is a
+// live client - the identity sheet gates checking, writes sync to the
+// platform's own ledger (projects/h2sep/platform_rooms), and the crew app's
+// records are never touched (see core/firebase-backend.js). The master repo
+// ships null; the live deployment carries the real config in config.js.
+const LOCAL_REVIEW = !firebaseConfig;
 
 // Rooms with their own CORRECT geometry in the viewer (D7): every floor-1 key.
 // The QQ family is drawn from A555; the King family from A550 (116 from view
@@ -21,7 +26,10 @@ const LOCAL_REVIEW = true;
 const MODEL_ROOMS = ['101', '103', '104', '105', '106', '107', '108', '109', '110', '111', '112', '113', '114', '115', '116', '118'];
 
 const store = await loadStore();
-if (!store.user) store.setUser('Preview Reviewer', 'RV', 'Local review');
+// Local review signs nothing, so a stand-in identity keeps the UI whole.
+// Live mode must NOT seed one: with no user, the "Who is checking?" sheet
+// gates the first visit, exactly like the crew app.
+if (!store.user && LOCAL_REVIEW) store.setUser('Preview Reviewer', 'RV', 'Local review');
 
 // Attach Firebase when configured. The bundled artifact preview cannot reach
 // external hosts (its page blocks them), so it stays in local mode by flag.
