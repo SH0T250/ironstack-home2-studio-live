@@ -98,7 +98,7 @@ function renderShell(hash, renderScreen) {
     </aside>
     <main class="main">
       <header class="project-brandbar" aria-label="Home2 Suites project and Ironstack studio">
-        <img class="mob-ironstack" src="${window.__H2SEP_LOGO || '../brand/ironstack-logo.png'}" alt="IRONSTACK.PRO — Build Better Systems."/>
+        <img class="mob-ironstack" src="${window.__H2SEP_LOGO || '../brand/ironstack-logo-tight.png'}" alt="IRONSTACK.PRO — Build Better Systems."/>
         <div class="project-brandbar-label">HOME2 SUITES · EAGLE PASS<span>Field operations &amp; model studio</span></div>
         <div class="project-brandbar-logos">
           <button class="mob-me" data-id-switch aria-label="Your initials and company. Tap to switch user.">${esc(u?.initials || '?')}</button>

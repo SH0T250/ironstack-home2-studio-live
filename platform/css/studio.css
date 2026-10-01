@@ -25,7 +25,10 @@
    is signed in). Placed after the 600px logos rule so width:auto wins. */
 .mob-ironstack,.mob-me{display:none}
 @media(max-width:899px){
-  .mob-ironstack{display:block;width:118px;height:auto;flex:none;border:1px solid #12364f;border-radius:6px;background:#031522}
+  /* The tight crop carries its own blueprint frame with even margins; any
+     added border or backing here reads as a crooked double frame at this
+     size (Austin, 2026-10-01: "why isn't it even"). Art only. */
+  .mob-ironstack{display:block;width:150px;height:auto;flex:none;border-radius:4px}
   .project-brandbar{justify-content:space-between;gap:10px}
   .project-brandbar-logos{width:auto;gap:12px}
   .mob-me{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;background:var(--cyan);color:#03181f;font:700 11px var(--mono);letter-spacing:.02em}
