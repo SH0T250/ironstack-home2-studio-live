@@ -38,6 +38,15 @@ const store = await loadStore();
 // stand-in until the cache turns over" is the acceptable failure.
 if (!LOCAL_REVIEW && store.user?.name === 'Preview Reviewer' && store.user?.initials === 'RV' && typeof store.clearUser === 'function') store.clearUser();
 if (!store.user && LOCAL_REVIEW) store.setUser('Preview Reviewer', 'RV', 'Local review');
+// A device that signed in before the project directory was rebuilt can still
+// carry a company that is no longer on this project. Those identities retag
+// to the GC on open. Matched by hash so the retired names never appear in
+// this public file (Austin, 2026-10-02).
+const LEGACY_CO = new Set([1245508889, 3042433515]);
+const coHash = s => { let h = 0; for (const ch of String(s || '')) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return h; };
+if (!LOCAL_REVIEW && store.user && LEGACY_CO.has(coHash(store.user.company))) {
+  store.setUser(store.user.name, store.user.initials, 'Ironstack Construction Group');
+}
 
 // Attach Firebase when configured. The bundled artifact preview cannot reach
 // external hosts (its page blocks them), so it stays in local mode by flag.
