@@ -108,12 +108,38 @@ window.addEventListener('message',event => {
   const height = Number(event.data.height);
   if (Number.isFinite(height) && height >= 200 && height <= 2400) frame.style.height = `${Math.ceil(height)}px`;
 });
+const modelPreview = [...$('model-stage').children];
+let modelFrame = null;
+function showRoomImage(message, restoreFocus = false) {
+  modelFrame?.remove(); modelFrame = null;
+  modelPreview.forEach(element => {element.hidden = false;});
+  $('show-room-image').hidden = true;
+  $('model-status').textContent = message;
+  $('model-load-label').textContent = 'Retry interactive 3D';
+  if (restoreFocus) $('load-model').focus();
+}
 $('load-model').addEventListener('click',() => {
+  if (modelFrame) return;
   const frame = document.createElement('iframe');
   frame.title = 'Actual Room 104 interactive 3D viewer';
   frame.src = STUDIO + 'platform/room3d.html?room=104&view=iso';
   frame.allow = 'fullscreen';
-  $('model-stage').replaceChildren(frame);
+  frame.tabIndex = 0;
+  modelFrame = frame;
+  modelPreview.forEach(element => {element.hidden = true;});
+  $('show-room-image').hidden = false;
+  $('model-status').textContent = 'Loading the interactive viewer. You can return to the room image at any time.';
+  $('model-stage').append(frame);
+  frame.focus();
+});
+$('show-room-image').addEventListener('click',() => showRoomImage('Room image shown. The guided tour and source documents work without interactive 3D.',true));
+window.addEventListener('message',event => {
+  if (!modelFrame || event.source !== modelFrame.contentWindow || event.origin !== new URL(STUDIO).origin) return;
+  if (event.data?.type === 'ironstack:webgl-unavailable') {
+    showRoomImage('Interactive 3D could not start in this browser. Explore the room image, guided tour and source documents, or retry the viewer.',document.activeElement === modelFrame);
+  } else if (event.data?.type === 'ironstack:webgl-ok') {
+    $('model-status').textContent = 'Interactive viewer ready. Select a room item to inspect its source context.';
+  }
 });
 
 const statuses = ['Pending','Installed','Missing','In box','Need install'];
