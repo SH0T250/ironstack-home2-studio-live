@@ -8,3 +8,17 @@
 @media print{@page{size:A4;margin:14mm}body{background:#fff;color:#111;font:11pt/1.35 Arial,sans-serif}body>*{display:none!important}#print-output{display:block!important}#print-output h1{font:700 22pt/1.2 Arial,sans-serif;color:#132e39;margin-bottom:8pt;break-after:avoid}#print-output p{overflow-wrap:anywhere;margin-bottom:10pt}#print-output table{table-layout:fixed;width:100%;border-collapse:collapse;font-size:10pt}#print-output thead{display:table-header-group}#print-output th,#print-output td{overflow-wrap:anywhere;padding:8pt;border:1px solid #9daeb5;text-align:left;vertical-align:top}#print-output th{background:#eaf0f2}#print-output th:nth-child(1),#print-output th:nth-child(2){width:25%}#print-output th:nth-child(3){width:50%}#print-output .print-note{font-size:9pt;color:#445b65;margin-top:14pt;break-inside:avoid}#print-output tr{break-inside:avoid}}
 
 .model-tools{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:18px}.model-tools p{font-size:14px;line-height:1.6;color:var(--muted);flex:1 1 260px}.model-tools .button{flex:none}
+
+/* Imagery: framed renders, view chips, image swaps */
+.hero-art,.model-stage{box-shadow:0 0 0 1px var(--line),0 34px 70px -38px #000}
+.image-button img,.model-stage>img{transition:opacity .32s var(--ease),transform .7s var(--ease)}
+.image-button img.is-swapping,.model-stage>img.is-swapping{opacity:0}
+.hero-art:hover img{transform:scale(1.015)}
+.source-media{aspect-ratio:1.6;max-height:min(82vh,960px);border-radius:0 0 14px 14px}
+.view-chips{display:flex;flex-wrap:wrap;gap:8px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.view-chips button{min-height:40px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:14px;transition:background .18s,color .18s,border-color .18s}
+.view-chips button:hover{color:var(--ink);background:var(--raised)}
+.view-chips button[aria-pressed=true]{color:var(--cyan);border-color:var(--cyan);background:#17313b}
+.stage-chips{position:absolute;top:18px;left:18px;right:18px;padding:0;border:0}
+.stage-chips button{background:#101c25ef;color:var(--ink)}
+@media(max-width:760px){.hero-art img{object-position:42% center}.view-chips{padding:12px}.stage-chips{top:12px;left:12px;right:12px}dialog>img{width:auto;max-width:none;height:min(68vh,560px)}}

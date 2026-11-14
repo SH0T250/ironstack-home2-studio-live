@@ -1,18 +1,55 @@
 const STUDIO = 'https://sh0t250.github.io/ironstack-home2-studio-live/';
 const chapters = [
-  {title:'Start With the Space.',copy:'Move from the connected first floor into a guest room or common area. Room links, progress shading, camera presets and layers give the work a location before you open a checklist.',prompt:'Explore the guest wing, exterior and exploded views. Select a room to inspect its context.',image:'floor-guest-wing.jpg',alt:'Actual connected first-floor model with labeled guest rooms and common areas.',route:'platform/floor3d.html'},
-  {title:'Make the Context Usable.',copy:'A parsed construction database, room/type mappings, source register, checklist records and model geometry give the screens a shared vocabulary. A room and item tag keep their identity across the workflow.',prompt:'Explore the original database scope and the interactive context figure below.',image:'floor-exploded.jpg',alt:'Actual exploded first-floor model showing the relationship between rooms and common spaces.',route:'#context',local:true},
-  {title:'A Checklist Line You Can See.',copy:'Search a modeled item by tag, select it in the room and isolate the object. Its quantity, room context and source links remain close while you inspect what it is and where it belongs.',prompt:'In Room 104, inspect refrigerator tag 901. Try the bed, bath, kitchen and inside-room camera presets.',image:'item-901-selected.jpg',alt:'Refrigerator tag 901 selected in the actual Room 104 model with its item information.',route:'platform/room3d.html?room=104&view=iso&tag=901'},
-  {title:'Follow the Tag to the Source.',copy:'The Source Library connects the model to plans, elevations, bathroom details and item references. Inspect a drawing crop, open the original sheet and review available supplier documents with their stated status.',prompt:'Open Item documents. Compare the A550 reference and the refrigerator supplier document; approval is explicitly unverified.',image:'item-901-submittal.jpg',alt:'Actual refrigerator supplier-reference view with its source and approval-status context.',route:'platform/room3d.html?room=104&view=iso&tag=901'},
-  {title:'Start With Who Is Checking.',copy:'A crew member enters a name, confirms initials and chooses a company. The stamp preview shows who will be attributed. On return, “That’s me” or “Switch user” makes the shared-phone handoff explicit.',prompt:'Try the separate fictional sign-in below. The actual app uses self-entered attribution, not verified employee SSO.',image:'crew-signin.jpg',alt:'Actual crew identity form with name, initials, stamp preview and company selection.',route:'#practice',local:true},
-  {title:'Capture the Actual Condition.',copy:'Initialed checkoffs, room notes, item history and distinct issue states preserve the detail behind progress. Missing material is different from a boxed item or an installation task. MEP punch lists remain separate from FF&E.',prompt:'Inspect the real checklist without changing it, then practice status changes safely below.',image:'crew-checklist.jpg',alt:'Actual room checklist with initialed entries, timestamps, source references and issue flags.',route:'platform/index.html#/room/104'},
-  {title:'Keep the Paper Handoff.',copy:'Room and floor print sheets carry the same grouped checklist into a paper workflow. Open a sheet and use the browser’s print or Save as PDF option when a crew needs a physical copy.',prompt:'Inspect the actual room sheet, or print your fictional practice checklist below. Handwritten marks are not automatically imported.',image:'print-sheet.jpg',alt:'Actual printable Room 104 checklist with grouped items and fields for field review.',route:'platform/index.html#/print/104'},
-  {title:'Find the Work Behind the Number.',copy:'Project, trade, floor and room views summarize the underlying records. The status breakdown keeps missing, in-box and installation issues distinct, helping a manager identify what needs attention next.',prompt:'Review a trade and its floor breakdown. Figures shown belong to the project review dataset.',image:'dashboard.jpg',alt:'Actual management dashboard showing checked counts, open issues and progress by trade and floor.',route:'platform/index.html'},
-  {title:'Coordinate the Repetition.',copy:'Bulk marking targets a tag across selected rooms, previews affected lines and supports Undo. Existing stamps are preserved unless restamping is selected. Assignments connect install or supply responsibility to scope, rooms and due dates.',prompt:'Explore the bulk and assignment views without applying changes to the actual review ledger.',image:'room-104-tags.jpg',alt:'Actual tagged Room 104 model showing repeatable furniture and fixture categories.',route:'platform/index.html#/bulk'}
+  {title:'Start With the Space.',copy:'Move from the connected first floor into a guest room or common area. Room links, progress shading, camera presets and layers give the work a location before you open a checklist.',prompt:'Explore the guest wing, exterior and exploded views. Select a room to inspect its context.',route:'platform/floor3d.html',views:[
+    {label:'Connected floor',image:'floor-common.jpg',alt:'Actual connected first-floor model: lobby, pool, guest corridor and guest rooms with room labels and open-issue markers.'},
+    {label:'Select Room 104',image:'floor-room-104.jpg',alt:'Room 104 selected on the actual floor model. Its card shows checklist progress, open issues and links to the detailed room model, checklist, plan and elevations.'}]},
+  {title:'Make the Context Usable.',copy:'A parsed construction database, room/type mappings, source register, checklist records and model geometry give the screens a shared vocabulary. A room and item tag keep their identity across the workflow.',prompt:'Explore the original database scope and the interactive context figure below.',route:'#context',local:true,views:[
+    {label:'Exploded floor',image:'floor-exploded.jpg',alt:'Actual exploded first-floor model separating guest rooms, corridor and common spaces, each labeled with its room number and progress.'}]},
+  {title:'A Checklist Line You Can See.',copy:'Search a modeled item by tag, select it in the room and isolate the object. Its quantity, room context and source links remain close while you inspect what it is and where it belongs.',prompt:'In Room 104, inspect refrigerator tag 901. Try the bed, bath, kitchen and inside-room camera presets.',route:'platform/room3d.html?room=104&view=iso&tag=901',views:[
+    {label:'Tag 901 selected',image:'item-901-selected.jpg',alt:'Refrigerator tag 901 selected in the actual Room 104 model, kitchen view, with its item card, quantity and source-document links.'},
+    {label:'Whole room, tagged',image:'room-104-tags.jpg',alt:'Actual Room 104 viewer with the full King Studio model, room basis notes, item search and layer controls.'}]},
+  {title:'Follow the Tag to the Source.',copy:'The Source Library connects the model to plans, elevations, bathroom details and item references. Inspect a drawing crop, open the original sheet and review available supplier documents with their stated status.',prompt:'Open Item documents. Compare the A550 callout and the refrigerator supplier document; approval is explicitly unverified.',route:'platform/room3d.html?room=104&view=iso&tag=901',views:[
+    {label:'Drawing callout',image:'doc-901-callout-wide.jpg',alt:'Actual Source Library showing the A550 architectural callout for tag 901, Refrigerator, beside the dishwasher callout 902.'}]},
+  {title:'Start With Who Is Checking.',copy:'A crew member enters a name, confirms initials and chooses a company. The stamp preview shows who will be attributed. On return, “That’s me” or “Switch user” makes the shared-phone handoff explicit.',prompt:'Try the separate fictional sign-in below. The actual app uses self-entered attribution, not verified employee SSO.',route:'#practice',local:true,views:[
+    {label:'Who is checking?',image:'crew-signin.jpg',alt:'Actual crew identity sheet with name, initials, stamp preview and company selection. Shown filled in, not submitted.'},
+    {label:'Welcome back',image:'crew-welcome.jpg',alt:'Actual welcome-back sheet confirming the remembered initials and company, with Switch user and That’s me.'}]},
+  {title:'Capture the Actual Condition.',copy:'Initialed checkoffs, room notes, item history and distinct issue states preserve the detail behind progress. Missing material is different from a boxed item or an installation task. MEP punch lists remain separate from FF&E.',prompt:'Inspect the real checklist without changing it, then practice status changes safely below.',route:'platform/index.html#/room/104',views:[
+    {label:'FF&E checklist',image:'crew-checklist.jpg',alt:'Actual Room 104 FF&E checklist with initialed lines, drawing references, the responsible company and Missing flags.'},
+    {label:'MEP punch',image:'crew-mep.jpg',alt:'Actual Room 104 MEP punch list, kept separate from FF&E, with initialed mechanical lines and drawing references.'}]},
+  {title:'Keep the Paper Handoff.',copy:'Room and floor print sheets carry the same grouped checklist into a paper workflow. Open a sheet and use the browser’s print or Save as PDF option when a crew needs a physical copy.',prompt:'Inspect the actual room sheet, or print your fictional practice checklist below. Handwritten marks are not automatically imported.',route:'platform/index.html#/print/104',views:[
+    {label:'Room 104 sheet',image:'print-sheet.jpg',alt:'Actual printable Room 104 sheet with grouped checklist lines, initials boxes and Missing notes.'}]},
+  {title:'Find the Work Behind the Number.',copy:'Project, trade, floor and room views summarize the underlying records. The status breakdown keeps missing, in-box and installation issues distinct, helping a manager identify what needs attention next.',prompt:'Review a trade and its floor breakdown. Figures shown belong to the project review dataset.',route:'platform/index.html',views:[
+    {label:'Dashboard',image:'dashboard.jpg',alt:'Actual management dashboard showing checked counts, open issues and percent complete by trade and floor.'},
+    {label:'Rooms',image:'rooms.jpg',alt:'Actual rooms list with filters, open-issue counts and checked totals for each first-floor room.'},
+    {label:'Activity',image:'activity.jpg',alt:'Actual activity log listing who recorded what and when, by initials and company.'}]},
+  {title:'Coordinate the Repetition.',copy:'Bulk marking targets a tag across selected rooms, previews affected lines and supports Undo. Existing stamps are preserved unless restamping is selected. Assignments connect install or supply responsibility to scope, rooms and due dates.',prompt:'Explore the bulk and assignment views without applying changes to the actual review ledger.',route:'platform/index.html#/bulk',views:[
+    {label:'Bulk mark',image:'bulk.jpg',alt:'Actual bulk-mark screen: choose rooms and a tag, then preview affected lines before applying. Nothing was applied for this capture.'},
+    {label:'Assignments',image:'assignments.jpg',alt:'Actual assignments view connecting each company to its scope, rooms, due date and checklist progress.'}]}
 ];
 const $ = id => document.getElementById(id);
+/* Swap a framed image: fade out, load, fade in. Reduced motion makes the fade instant via CSS. */
+function swapImage(img,src,alt) {
+  img.alt = alt;
+  if (img.getAttribute('src') === src) return;
+  img.classList.add('is-swapping');
+  const next = new Image();
+  next.onload = next.onerror = () => {if (img.dataset.pending !== src) return;img.src = src;img.classList.remove('is-swapping');};
+  img.dataset.pending = src;
+  next.src = src;
+}
+/* A row of pressed-state buttons that pick one of several views of the same subject. */
+function renderViewChips(host,views,active,onPick) {
+  host.hidden = views.length < 2;
+  host.replaceChildren(...views.map((view,i) => {
+    const button = document.createElement('button');
+    button.type = 'button';button.textContent = view.label;button.setAttribute('aria-pressed',String(i === active));
+    button.addEventListener('click',() => onPick(i));
+    return button;
+  }));
+}
 const chapterTabs = [...document.querySelectorAll('[data-chapter]')];
 let chapter = 0;
+let chapterView = 0;
 let playback = null;
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -30,16 +67,22 @@ function showChapter(index, focusTab = false) {
   $('chapter-title').textContent = item.title;
   $('chapter-copy').textContent = item.copy;
   $('chapter-prompt').textContent = item.prompt;
-  $('tour-image').src = `assets/${item.image}`;
-  $('tour-image').alt = item.alt;
-  $('tour-media').dataset.gallery = `assets/${item.image}`;
-  $('tour-media').dataset.caption = item.alt;
+  showChapterView(0);
   $('chapter-link').href = item.local ? item.route : STUDIO + item.route;
   $('chapter-link').target = item.local ? '_self' : '_blank';
   $('chapter-link').firstChild.textContent = item.local ? 'Explore this part ' : 'Open this view ';
   $('previous').disabled = chapter === 0;
   $('next').disabled = chapter === chapters.length - 1;
   if (focusTab) chapterTabs[chapter].focus();
+}
+function showChapterView(index) {
+  const views = chapters[chapter].views;
+  chapterView = index;
+  const view = views[index];
+  swapImage($('tour-image'),`assets/${view.image}`,view.alt);
+  $('tour-media').dataset.gallery = `assets/${view.image}`;
+  $('tour-media').dataset.caption = view.alt;
+  renderViewChips($('tour-views'),views,index,i => {stopPlayback();showChapterView(i);$('tour-views').children[i].focus();});
 }
 chapterTabs.forEach((tab,index) => tab.addEventListener('click',() => {stopPlayback();showChapter(index);}));
 document.querySelector('.tour-tabs').addEventListener('keydown',event => {
@@ -55,17 +98,23 @@ $('play-tour').addEventListener('click',() => {
   if (chapter === chapters.length - 1) showChapter(0);
   $('play-tour').setAttribute('aria-pressed','true');
   $('play-tour').querySelector('span').textContent = 'Pause walkthrough';
-  playback = setInterval(() => {if (chapter === chapters.length - 1) stopPlayback();else showChapter(chapter + 1);},10000);
+  playback = setInterval(() => {
+    if (chapterView < chapters[chapter].views.length - 1) showChapterView(chapterView + 1);
+    else if (chapter === chapters.length - 1) stopPlayback();
+    else showChapter(chapter + 1);
+  },7000);
 });
 document.addEventListener('visibilitychange',() => {if (document.hidden) stopPlayback();});
 reducedMotion.addEventListener('change',() => {if (reducedMotion.matches) stopPlayback();});
 
 const sourceViews = [
-  {image:'item-901-selected.jpg',title:'Room 104 · Refrigerator · Tag 901',copy:'The selected item keeps its tag and room context while you open the associated documents.',tag:'901'},
-  {image:'item-901-plan.jpg',title:'Architectural Context · Sheet A550',copy:'The drawing reference connects the refrigerator to the room plan. Open the original sheet to review the source at full scale.',tag:'901'},
-  {image:'item-901-submittal.jpg',title:'Supplier Reference · Refrigerator',copy:'The linked supplier document adds product context. The public registry explicitly marks its approval status as unverified.',tag:'901'},
-  {image:'divider-spec.jpg',title:'Supplier Reference · Divider Hardware · GR-402.1',copy:'The divider hardware tag links to A550 and the WINGITS supplier submittal library. The source relationship stays attached to the item; its approval status is unverified.',tag:'GR-402.1'},
-  {image:'ffe-sheet.jpg',title:'FF&E Plans and Elevations · ID5.1',copy:'The original interior drawing preserves the plan and elevation detail behind the visual model. Read the sheet alongside the room and item context.',route:'platform/room3d.html?room=104&view=iso'},
+  {image:'item-901-room.jpg',title:'Room 104 · Refrigerator · Tag 901',copy:'The selected item keeps its tag, quantity and room context. Its card links straight to the drawing detail and supplier documents.',tag:'901'},
+  {image:'doc-901-callout.jpg',title:'Drawing Callout · Sheet A550 · Tag 901',copy:'The Source Library opens a crop of the architectural sheet centered on the same tag: 901, Refrigerator, beside dishwasher 902. Open the original sheet for dimensions and related views.',tag:'901'},
+  {image:'doc-plan.jpg',title:'Architectural Room Plan · A550 · View 01',copy:'The enlarged room plan carries the dimension strings, working-wall note and item tags that the model and checklist lines are built from.',tag:'901'},
+  {image:'doc-elevations.jpg',title:'Interior Room Elevations · A550',copy:'Interior elevations sit one tab away from the plan, so mounting heights and wall-by-wall item locations can be checked against the same room.',tag:'901'},
+  {image:'doc-bath.jpg',title:'Bathroom Plan and Elevations · A530',copy:'Bath accessories reference their own sheet. The library keeps the original orientation and says so, because Room 104 is a mirrored room.',tag:'901'},
+  {image:'doc-901-submittal.jpg',title:'Supplier Reference · Danby Refrigerator',copy:'The linked supplier document adds product context. The studio labels it “Approval status not verified” and links out to the original.',tag:'901'},
+  {image:'doc-divider.jpg',title:'Another Item · Divider Hardware · GR-402.1',copy:'The divider hardware tag opens its own A550 callout and a WINGITS supplier reference. The source relationship stays attached to the item; its approval status is unverified.',tag:'GR-402.1'},
   {image:'actual-room-field-photo.jpg',title:'Actual Project Field Photo',copy:'The published gallery preserves real site photographs alongside the model and drawing context. This image shows the bed, headboard, divider and window finishes.',route:'review-assets/photos/20260812_141100.jpg'}
 ];
 const sourceTabs = [...document.querySelectorAll('[data-source]')];
@@ -75,8 +124,7 @@ function showSource(index,focusTab = false) {
   const source = sourceViews[index];
   sourceTabs.forEach((tab,i) => {tab.setAttribute('aria-selected',String(i === index));tab.tabIndex = i === index ? 0 : -1;});
   $('source-panel').setAttribute('aria-labelledby',`source-${index}`);
-  $('source-image').src = `assets/${source.image}`;
-  $('source-image').alt = source.title + '. ' + source.copy;
+  swapImage($('source-image'),`assets/${source.image}`,source.title + '. ' + source.copy);
   $('source-media').dataset.gallery = `assets/${source.image}`;
   $('source-media').dataset.caption = source.title + '. ' + source.copy;
   $('source-title').textContent = source.title;
@@ -108,6 +156,18 @@ window.addEventListener('message',event => {
   const height = Number(event.data.height);
   if (Number.isFinite(height) && height >= 200 && height <= 2400) frame.style.height = `${Math.ceil(height)}px`;
 });
+const modelViews = [
+  {label:'Inside the room',image:'room-104-inside.jpg',alt:'Actual eye-level Room 104 model view from the entry, looking past the working wall to the bed and window.'},
+  {label:'Bed area',image:'room-104-bed.jpg',alt:'Actual Room 104 model, bed-area view, with FF&E tags on the headboard, sconces, sofa, drapery and television.'},
+  {label:'Bath',image:'room-104-bath.jpg',alt:'Actual Room 104 model, bath view, with tagged vanity, mirror and bath accessories.'},
+  {label:'Kitchen',image:'room-104-kitchen.jpg',alt:'Actual Room 104 model, kitchen view, with tagged refrigerator, dishwasher and microwave.'}
+];
+function showModelView(index,focus = false) {
+  swapImage($('model-image'),`assets/${modelViews[index].image}`,modelViews[index].alt);
+  renderViewChips($('model-views'),modelViews,index,i => showModelView(i,true));
+  if (focus) $('model-views').children[index].focus();
+}
+showModelView(0);
 const modelPreview = [...$('model-stage').children];
 let modelFrame = null;
 function showRoomImage(message, restoreFocus = false) {
