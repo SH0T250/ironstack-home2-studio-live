@@ -4004,7 +4004,9 @@ function focusOn(p){
   if (dir.lengthSq() < 0.01) dir.set(1,1,1);
   dir.normalize().multiplyScalar(p.dist);
   if (dir.y < p.dist*0.3) dir.y = p.dist*0.3;
-  tweenTo(p.focus.clone().add(dir), p.focus.clone(), 900);
+  /* p.focus is authored unmirrored, like the meshes, labels and view presets. */
+  var f = p.focus.clone(); f.x = MX(f.x);
+  tweenTo(f.clone().add(dir), f, 900);
 }
 
 /* ---------------- raycast picking ---------------- */
